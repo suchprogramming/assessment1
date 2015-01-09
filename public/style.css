@@ -7597,6 +7597,10 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 250px;
+  background-color: #e0e0e0;
+  border: 1px solid gray;
+  border-radius: 5px;
 }
 @media (min-width: 768px) {
   .container {
@@ -8925,7 +8929,7 @@ select[multiple].input-lg {
 .btn {
   display: inline-block;
   padding: 6px 12px;
-  margin-bottom: 0;
+  margin-bottom: 25px;
   font-size: 14px;
   font-weight: normal;
   line-height: 1.42857143;
