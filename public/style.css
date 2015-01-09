@@ -13,6 +13,9 @@ html {
 body {
   margin: 0;
 }
+span.user{
+  color:#00cc00
+}
 article,
 aside,
 details,
@@ -7102,6 +7105,7 @@ body {
   line-height: 1.42857143;
   color: #333;
   background-color: #fff;
+  background-image: url('http://gdj.gdj.netdna-cdn.com/wp-content/uploads/2012/08/minimal-background-pattern-wordpress-8.jpg')
 }
 input,
 button,
