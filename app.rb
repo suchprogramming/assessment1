@@ -1,6 +1,6 @@
 require('sinatra')
 require('sinatra/reloader')
-require('./wordchecker')
+require('./lib/wordchecker')
 
 get('/') do
   "Hello!"
@@ -8,6 +8,10 @@ end
 
 get('/form') do
   erb(:form)
+end
+
+get('/error') do
+  erb(:error)
 end
 
 get('/results') do

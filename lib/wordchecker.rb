@@ -1,15 +1,14 @@
 class String
-  define_method(:wordchecker) do |checker|
-    totalmatches = 0
-    sentence = self.scan(checker)
-    sentence.each() do |word|
-      if word.include?(checker)
-        totalmatches = totalmatches.+(1)
-        puts totalmatches
+  define_method(:wordchecker) do |word_to_check|
+    total_matches = 0
+    user_sentence = self.scan(word_to_check)
+    user_sentence.each() do |user_sentence_element|
+      if user_sentence_element.include?(word_to_check)
+        total_matches = total_matches.+(1)
       else
-        puts "No Matches"
+        total_matches = 0
       end
     end
-    totalmatches
+    total_matches
   end
 end
