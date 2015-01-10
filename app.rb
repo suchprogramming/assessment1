@@ -1,5 +1,6 @@
 require('sinatra')
 require('sinatra/reloader')
+require ('dogeify/all')
 require('./lib/wordchecker')
 
 get('/') do
@@ -16,6 +17,7 @@ end
 
 get('/results') do
   @user_sentence = params.fetch('user_sentence')
+  @doge_user = @user_sentence.dogeify()
   @word_to_check = params.fetch('word_to_check')
   @word_check_total = @user_sentence.wordchecker(@word_to_check)
   if @word_to_check.eql?("") or @user_sentence.eql?("")

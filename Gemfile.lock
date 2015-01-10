@@ -2,6 +2,9 @@ GEM
   remote: https://rubygems.org/
   specs:
     backports (3.6.4)
+    dogeify (1.1.0)
+      engtagger
+    engtagger (0.2.0)
     multi_json (1.10.1)
     rack (1.6.0)
     rack-protection (1.5.3)
@@ -25,5 +28,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  dogeify
   sinatra
   sinatra-contrib
