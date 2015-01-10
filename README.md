@@ -18,7 +18,7 @@
 ░░░░░░▀▄▄▄▄▄▄▀▀▀▒▒▒▒▒▄▄▀░░░░░
 ░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▀▀░░░░░░░░
 
-This ditty takes a sentence and a word from a user and checks to see how many instances of the supplied word occur within the supplied sentence.
+This program takes a sentence and a word from a user and checks to see how many instances of the supplied word occur within the supplied sentence.
 
 I hope...
 
