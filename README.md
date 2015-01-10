@@ -22,7 +22,7 @@ This program takes a sentence and a word from a user and checks to see how many 
 
 I hope...
 
-Copyright (C) <2015> <Tyler Whitsett>
+Copyright (C) 2015 Tyler Whitsett
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
