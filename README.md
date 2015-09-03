@@ -1,6 +1,7 @@
+```
 ░░░░░░░░░▄░░░░░░░░░░░░░░▄░░░░ wow
 ░░░░░░░░▌▒█░░░░░░░░░░░▄▀▒▌░░░
-░░░░░░░░▌▒▒█░░░░░░░░▄▀▒▒▒▐░░░ Such Programming
+░░░░░░░░▌▒▒█░░░░░░░░▄▀▒▒▒▐░░░ such programming
 ░░░░░░░▐▄▀▒▒▀▀▀▀▄▄▄▀▒▒▒▒▒▐░░░
 ░░░░░▄▄▀▒░▒▒▒▒▒▒▒▒▒█▒▒▄█▒▐░░░
 ░░░▄▀▒▒▒░░░▒▒▒░░░▒▒▒▀██▀▒▌░░░
@@ -17,10 +18,9 @@
 ░░░░▀▄▒▒▒▒▒▒▒▒▒▒▄▄▄▀▒▒▒▒▄▀░░░
 ░░░░░░▀▄▄▄▄▄▄▀▀▀▒▒▒▒▒▄▄▀░░░░░
 ░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▀▀░░░░░░░░
+```
 
 This program takes a sentence and a word from a user and checks to see how many instances of the supplied word occur within the supplied sentence.
-
-I hope...
 
 Copyright (C) 2015 Tyler Whitsett
 
