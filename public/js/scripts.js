@@ -12,21 +12,22 @@ $(function() {
   var checkSentence;
   var checkWord;
 
-  $("#main-form").keyup(function () {
+  $("#user_sentence").keyup(function () {
+    checkSentence = $("#user_sentence").val().trim();
+    console.log(checkSentence)
+    checkSentence ? $("#sentence-input").removeClass("has-error").addClass("has-success") : $("#sentence-input").removeClass("has-success").addClass("has-error")
+    checkFullForm();
+  })
 
-    $("#user_sentence").keyup(function () {
-      checkSentence = $("#user_sentence").val().trim();
-      console.log(checkSentence)
-      checkSentence != "" ? $("#sentence-input").removeClass("has-error").addClass("has-success") : $("#sentence-input").removeClass("has-success").addClass("has-error")
-    })
+  $("#word_to_check").keyup(function () {
+    checkWord = $("#word_to_check").val().trim();
+    console.log(checkWord)
+    checkWord ? $("#word-input").removeClass("has-error").addClass("has-success") : $("#word-input").removeClass("has-success").addClass("has-error")
+    checkFullForm();
+  })
 
-    $("#word_to_check").keyup(function () {
-      checkWord = $("#word_to_check").val().trim();
-      console.log(checkWord)
-      checkWord != "" ? $("#word-input").removeClass("has-error").addClass("has-success") : $("#word-input").removeClass("has-success").addClass("has-error")
-    })
-
-    if (checkWord && checkSentence != "") {
+  function checkFullForm() {
+    if (checkWord && checkSentence) {
       $("#word-checker-button").removeClass("disabled");
       $("#word-checker-button").click(function() {
         $("#main-form").submit();
@@ -38,5 +39,5 @@ $(function() {
         event.preventDefault();
       });
     }
-  })
+  }
 });
