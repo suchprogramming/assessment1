@@ -1,0 +1,23 @@
+html, body {
+  height: 100%;
+  margin: auto;
+  display: table;
+}
+#main-form {
+  min-width: 396px;
+}
+#main-form h3 {
+  margin-top: 0px;
+}
+.user {
+  color: green;
+}
+.container {
+  display: table-cell;
+  vertical-align: middle;
+}
+.well {
+  background-image: url("../imgs/bg.jpg");
+  background-repeat: repeat;
+  border: 1px solid #c0c0c0
+}
