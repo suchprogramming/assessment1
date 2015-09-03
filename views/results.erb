@@ -1,5 +1,9 @@
-<h4>Your sentence was: <span class ="user"><%= @user_sentence %></span> </h4>
-<h4>If you were a Doge your sentence would be: <span class ="user"><%= @doge_user %></span> </h4>
-<h4>Your word for instance checking was: <span class ="user"> <%= @word_to_check %></span> </h4>
-<h4>Your word occured <span class ="user"><%= @word_check_total %></span> times! </h4>
-<button type="button" class="btn btn-info"><a href="/form">Try Again!</a></button>
+<div class="col-md-12">
+  <div class="well well-sm">
+    <h4>Your sentence was: <span class ="user"><%= @user_sentence %></span> </h4>
+    <h4>If you were a Doge your sentence would be: <span class ="user"><%= @doge_user %></span> </h4>
+    <h4>Your word for instance checking was: <span class ="user"> <%= @word_to_check %></span> </h4>
+    <h4>Your word occured <span class ="user"><%= @word_check_total %></span> times! </h4>
+    <a class="btn btn-info" href="/">Try Again</a>
+  </div>
+</div>
