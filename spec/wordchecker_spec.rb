@@ -10,5 +10,9 @@ describe('String#wordchecker') do
   end
   it("returns 0 if nil or a blank string are passed into the method") do
     expect("Hi HI hI hi".wordchecker(nil)).to(eq(0))
+    expect(" ".wordchecker("hi")).to(eq(0))
+  end
+  it("returns 0 for strings containing only whitespace") do
+    expect(" ".wordchecker("  ")).to(eq(0))
   end
 end
