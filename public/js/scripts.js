@@ -12,17 +12,25 @@ $(function() {
   var checkSentence;
   var checkWord;
 
-  $("#user_sentence").keyup(function () {
+  var successIcon = "<span class='glyphicon glyphicon-ok form-control-feedback' aria-hidden='true'></span>"
+  var youDoneGoofed = "<span class='glyphicon glyphicon-remove form-control-feedback' aria-hidden='true'></span>"
+
+  $("#user_sentence").on('keyup change', function () {
     checkSentence = $("#user_sentence").val().trim();
     console.log(checkSentence)
-    checkSentence ? $("#sentence-input").removeClass("has-error").addClass("has-success") : $("#sentence-input").removeClass("has-success").addClass("has-error")
+    if (checkSentence) {
+      $("#sentence-input").attr("class", "form-group has-feedback has-success") && $("#sentence-input span").html(successIcon);
+    } else {
+      $("#sentence-input").attr("class", "form-group has-feedback has-error") && $("#sentence-input span").html(youDoneGoofed);
+    }
     checkFullForm();
   })
 
-  $("#word_to_check").keyup(function () {
+  $("#word_to_check").on('keyup change', function () {
     checkWord = $("#word_to_check").val().trim();
     console.log(checkWord)
-    checkWord ? $("#word-input").removeClass("has-error").addClass("has-success") : $("#word-input").removeClass("has-success").addClass("has-error")
+    checkWord ? $("#word-input").attr("class", "form-group has-feedback has-success") && $("#word-input span").html(successIcon) :
+      $("#word-input").attr("class", "form-group has-feedback has-error") && $("#word-input span").html(youDoneGoofed)
     checkFullForm();
   })
 
